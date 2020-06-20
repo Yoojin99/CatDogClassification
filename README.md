@@ -7,6 +7,9 @@
 
 ## 이용한 데이터 셋
 
+kaggle Dogs vs. Cats Dataset
+<https://www.kaggle.com/c/dogs-vs-cats/data>
+
 
 ## 모델 테스트 방법
 
