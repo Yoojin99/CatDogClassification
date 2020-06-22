@@ -16,6 +16,8 @@ kaggle Dogs vs. Cats Dataset
 CatDogClassification.ipynb -> cat dog classify 하는 모델 학습 및 weight 파일 저장하는 코드
 evaluation.ipynb -> 모델 테스트 코드
 model.h5 -> 학습시킨 모델의 가중치 파일
+data/test1 -> 테스트 데이터
+data/train -> 학습 데이터
 
 ## 모델 테스트 방법
 
