@@ -16,6 +16,8 @@ kaggle Dogs vs. Cats Dataset
 CatDogClassification.ipynb -> cat dog classify 하는 모델 학습 및 weight 파일 저장하는 코드
 evaluation.ipynb -> 모델 테스트 코드
 model.h5 -> 학습시킨 모델의 가중치 파일
+data/test1 -> 테스트 데이터
+data/train -> 학습 데이터
 
 ## 모델 테스트 방법
 
@@ -100,7 +102,7 @@ nb_samples = test_df.shape[0]
 test_gen = ImageDataGenerator(rescale=1./255)
 test_generator = test_gen.flow_from_dataframe(
   test_df,
-  "C:\\Users\\YooJin\\Desktop\\topcit\\data\\test1\\",
+  "C:\\Users\\YooJin\\Desktop\\topcit\\data\\test1\\", #경로 재지정 필요
   x_col='filename',
   y_col=None,
   class_mode=None,
