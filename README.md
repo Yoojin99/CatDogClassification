@@ -100,7 +100,7 @@ nb_samples = test_df.shape[0]
 test_gen = ImageDataGenerator(rescale=1./255)
 test_generator = test_gen.flow_from_dataframe(
   test_df,
-  "C:\\Users\\YooJin\\Desktop\\topcit\\data\\test1\\",
+  "C:\\Users\\YooJin\\Desktop\\topcit\\data\\test1\\", #경로 재지정 필요
   x_col='filename',
   y_col=None,
   class_mode=None,
