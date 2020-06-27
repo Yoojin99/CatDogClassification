@@ -52,13 +52,7 @@ IMAGE_SIZE=(IMAGE_WIDTH, IMAGE_HEIGHT)
 IMAGE_CHANNELS=3
 ~~~
 
-#### 2. 모델 예측
-학습한 모델로 1.에서 생성한 test 셋을 넣는다.
-~~~
-predict = model.predict_generator(test_generator, steps=np.ceil(nb_samples/batch_size))
-~~~
-
-#### 3. 모델 불러오기 위한 함수
+#### 2. 모델 불러오기 위한 함수
 모델을 불러오기 위해 모델의 뼈대를 만드는 create_model() 함수를 만든다. 후에 여기에 저장된 weight를 불러올 것이다.
 ~~~
 def create_model():
@@ -89,7 +83,7 @@ def create_model():
     return model
 ~~~
 
-#### 4. 데이터 준비
+#### 3. 데이터 준비
 prediction의 결과는 각 record 별 개일 확률 ~, 고양이일 확률 ~ 로 출력된다.
 개와 고양이일때의 확률을 비교하여 더 크게 나타난 쪽으로 레이블을 선택해서 값을 치환한다.
 ~~~
